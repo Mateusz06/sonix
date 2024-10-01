@@ -90,3 +90,98 @@ body {
 .nav-links a:hover {
     color: #000000;
 }
+
+.container {
+    /* max-width: 120rem; */
+    margin: 6rem auto 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #00000010;
+    color: #000000;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+.card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #000000;
+    text-shadow: 0 0 10px #0000005d;
+
+}
+
+.card-header p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    color: #000000;
+    flex: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.read-more {
+    background-color: #ffffff42;
+    color: #000000ea;
+    padding: 0.5rem 2rem; /* Increased padding to make the button longer */
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-weight: 800;
+    min-width: 10rem; /* Added minimum width */
+    text-align: center; /* Ensure text is centered */
+}
+
+.read-more:hover {
+    background-color: #8bafbc59;
+    color: #000000ea;
+}
+
+.learn-more {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    color: #ffffff;
+}
