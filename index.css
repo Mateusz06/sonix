@@ -94,9 +94,11 @@ body {
 }
 
 .hero {
-    background-image: ('heroback.jpg');
-    background-size: cover;
-    background-position: right center;
+    background-image: url('heroback3.jpg');
+    background-size: auto 110%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #030303;
     height: 30rem;
     display: flex;
     align-items: center;
@@ -115,7 +117,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adds a semi-transparent overlay */
+    z-index: 1;
 }
 
 .hero-content {
@@ -150,11 +154,10 @@ body {
     transform: translateY(-5px);
 }
 
-.card-container {
+/* .card-container {
     padding-top: 2.6rem;
     max-width: 90%;
     margin: 0 auto;
-    /* padding-bottom: 10rem; */
 }
 
 .product-grid {
@@ -188,7 +191,6 @@ body {
 
 .text-content {
     margin-bottom: 20px;
-    /* height: 6rem; */
 }
 
 .product-card h3 {
@@ -226,4 +228,4 @@ button:hover {
 
 .altisphoto {
     transform: scaleX(-1);
-}
+} */
